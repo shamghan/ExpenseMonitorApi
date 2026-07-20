@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ExpenseMonitor.API/ExpenseMonitor.API.csproj" />
+    <Project Path="src/ExpenseMonitor.Application/ExpenseMonitor.Application.csproj" />
+    <Project Path="src/ExpenseMonitor.Domain/ExpenseMonitor.Domain.csproj" />
+    <Project Path="src/ExpenseMonitor.Infrastructure/ExpenseMonitor.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="tests/ExpenseMonitor.API.Tests/ExpenseMonitor.API.Tests.csproj" />
+    <Project Path="tests/ExpenseMonitor.Applications.Tets/ExpenseMonitor.Applications.Tests.csproj" />
+    <Project Path="tests/ExpenseMonitor.Infrastructure.Tests/ExpenseMonitor.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>
