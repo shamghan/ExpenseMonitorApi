@@ -1,22 +1,22 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Interfaces;
-using Restaurants.Domain.Repositories;
-using Restaurants.Infrastructure.Authorization;
-using Restaurants.Infrastructure.Authorization.Requirments;
-using Restaurants.Infrastructure.Authorization.Services;
-using Restaurants.Infrastructure.Configuration;
-using Restaurants.Infrastructure.Persistence;
-using Restaurants.Infrastructure.Repositories;
-using Restaurants.Infrastructure.Seeders;
-using Restaurants.Infrastructure.Storage;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Interfaces;
+using ExpenseMonitor.Domain.Repositories;
+using ExpenseMonitor.Infrastructure.Authorization;
+using ExpenseMonitor.Infrastructure.Authorization.Requirments;
+using ExpenseMonitor.Infrastructure.Authorization.Services;
+using ExpenseMonitor.Infrastructure.Configuration;
+using ExpenseMonitor.Infrastructure.Persistence;
+using ExpenseMonitor.Infrastructure.Repositories;
+using ExpenseMonitor.Infrastructure.Seeders;
+using ExpenseMonitor.Infrastructure.Storage;
 
-namespace Restaurants.Infrastructure.Extensions;
+namespace ExpenseMonitor.Infrastructure.Extensions;
 public static class ServiceCollectionExtensions
 {
     public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)

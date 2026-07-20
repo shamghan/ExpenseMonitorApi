@@ -1,13 +1,13 @@
-﻿using AutoMapper;
+using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Restaurants.Application.Restaurants;
-using Restaurants.Application.User;
+using ExpenseMonitor.Application.Restaurants;
+using ExpenseMonitor.Application.User;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Restaurants.Application.Extensions;
+namespace ExpenseMonitor.Application.Extensions;
 
 public static class ServiceCollectionExtensions
 {

@@ -1,8 +1,8 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Moq;
-using Restaurants.Application.User;
-using Restaurants.Domain.Constants;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Applications.Tets.User
+namespace ExpenseMonitor.Applications.Tets.User
 {
     public class UserContextTests
     {

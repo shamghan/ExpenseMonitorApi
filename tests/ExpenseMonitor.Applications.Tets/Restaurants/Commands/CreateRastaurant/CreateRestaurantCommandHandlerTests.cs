@@ -1,19 +1,19 @@
-﻿using AutoMapper;
+using AutoMapper;
 using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Restaurants.Application.Restaurants.Command.CreateRestaurant;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Application.User;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Applications.Tests.Restaurants.Commands.CreateRastaurant
+namespace ExpenseMonitor.Applications.Tests.Restaurants.Commands.CreateRastaurant
 {
     public class CreateRestaurantCommandHandlerTests
     {

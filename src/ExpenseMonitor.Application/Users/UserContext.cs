@@ -1,9 +1,9 @@
-﻿
+
 
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
-namespace Restaurants.Application.User
+namespace ExpenseMonitor.Application.User
 {
     public interface IUserContext
     {

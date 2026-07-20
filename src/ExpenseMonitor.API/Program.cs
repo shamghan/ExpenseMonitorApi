@@ -1,15 +1,15 @@
 using Microsoft.EntityFrameworkCore;
-using Restaurants.Infrastructure.Persistence;
-using Restaurants.Infrastructure.Extensions;
-using Restaurants.Infrastructure.Seeders;
-using Restaurants.Application.Extensions;
+using ExpenseMonitor.Infrastructure.Persistence;
+using ExpenseMonitor.Infrastructure.Extensions;
+using ExpenseMonitor.Infrastructure.Seeders;
+using ExpenseMonitor.Application.Extensions;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
-using Restaurants.API.Middleware;
-using Restaurants.Domain.Entities;
+using ExpenseMonitor.API.Middleware;
+using ExpenseMonitor.Domain.Entities;
 using Microsoft.OpenApi.Models;
-using Restaurants.API.Extensions;
+using ExpenseMonitor.API.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

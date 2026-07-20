@@ -1,13 +1,13 @@
-﻿using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
-using Restaurants.Infrastructure.Persistence;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
+using ExpenseMonitor.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Repositories
+namespace ExpenseMonitor.Infrastructure.Repositories
 {
     public class DishesRepository(RestaurantsDbContext dbContext) : IDishesRepository
     {

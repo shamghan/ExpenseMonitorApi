@@ -1,13 +1,13 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Moq;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
-using Restaurants.Infrastructure.Seeders;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
+using ExpenseMonitor.Infrastructure.Seeders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.API.Tests.Controllers
+namespace ExpenseMonitor.API.Tests.Controllers
 {
     public class RestaurantControllerTests : IClassFixture<WebApplicationFactory<Program>>
     {

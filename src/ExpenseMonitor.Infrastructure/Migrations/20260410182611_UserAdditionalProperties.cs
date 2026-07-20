@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Restaurants.Infrastructure.Migrations
+namespace ExpenseMonitor.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class UserAdditionalProperties : Migration

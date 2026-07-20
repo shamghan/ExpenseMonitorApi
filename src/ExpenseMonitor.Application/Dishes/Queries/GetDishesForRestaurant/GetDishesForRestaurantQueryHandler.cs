@@ -1,17 +1,17 @@
-﻿using AutoMapper;
+using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Restaurants.Application.Dishes.Dtos;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Exceptions;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Application.Dishes.Dtos;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Exceptions;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Dishes.Queries.GetDishesForRestaurant
+namespace ExpenseMonitor.Application.Dishes.Queries.GetDishesForRestaurant
 {
     public class GetDishesForRestaurantQueryHandler(
         ILogger<GetDishesForRestaurantQueryHandler> logger,

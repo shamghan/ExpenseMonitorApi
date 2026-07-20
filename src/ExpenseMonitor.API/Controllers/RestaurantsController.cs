@@ -1,20 +1,20 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Restaurants.Application.Restaurants;
-using Restaurants.Application.Restaurants.Command.CreateRestaurant;
-using Restaurants.Application.Restaurants.Commands.DeleteRestaurant;
-using Restaurants.Application.Restaurants.Commands.UpdateRestuarant;
-using Restaurants.Application.Restaurants.Commands.UploadRestaurantLogo;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Application.Restaurants.Queries.GetAllRestaurants;
-using Restaurants.Application.Restaurants.Queries.GetRestaurantById;
-using Restaurants.Domain.Constants;
-using Restaurants.Infrastructure.Authorization;
+using ExpenseMonitor.Application.Restaurants;
+using ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant;
+using ExpenseMonitor.Application.Restaurants.Commands.DeleteRestaurant;
+using ExpenseMonitor.Application.Restaurants.Commands.UpdateRestuarant;
+using ExpenseMonitor.Application.Restaurants.Commands.UploadRestaurantLogo;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Application.Restaurants.Queries.GetAllRestaurants;
+using ExpenseMonitor.Application.Restaurants.Queries.GetRestaurantById;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Infrastructure.Authorization;
 using System.Reflection;
 
-namespace Restaurants.API.Controllers
+namespace ExpenseMonitor.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

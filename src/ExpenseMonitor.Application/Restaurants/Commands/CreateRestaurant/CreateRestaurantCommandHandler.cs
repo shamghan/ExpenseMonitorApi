@@ -1,17 +1,17 @@
-﻿using AutoMapper;
+using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Application.User;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Command.CreateRestaurant
+namespace ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant
 {
     public class CreateRestaurantCommandHandler(ILogger<CreateRestaurantCommandHandler> logger, 
         IMapper mapper, IRestaurantsRepository restaurantsRepository,

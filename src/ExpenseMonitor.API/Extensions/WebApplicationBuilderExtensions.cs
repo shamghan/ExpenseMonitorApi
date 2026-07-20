@@ -1,7 +1,7 @@
-﻿using Microsoft.OpenApi.Models;
-using Restaurants.API.Middleware;
+using Microsoft.OpenApi.Models;
+using ExpenseMonitor.API.Middleware;
 
-namespace Restaurants.API.Extensions
+namespace ExpenseMonitor.API.Extensions
 {
     public static class WebApplicationBuilderExtensions
     {

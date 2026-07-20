@@ -1,14 +1,14 @@
-﻿using MediatR;
-using Restaurants.Application.Common;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Domain.Constants;
+using MediatR;
+using ExpenseMonitor.Application.Common;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Domain.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Queries.GetAllRestaurants
+namespace ExpenseMonitor.Application.Restaurants.Queries.GetAllRestaurants
 {
     public class GetAllRestaurantQuery : IRequest<PagedResult<RestaurantsDto>>
     {

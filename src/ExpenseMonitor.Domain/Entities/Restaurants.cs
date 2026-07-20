@@ -1,5 +1,5 @@
-﻿using Restaurants.Domain.Entities;
-namespace Restaurants.Domain.Entities;
+using ExpenseMonitor.Domain.Entities;
+namespace ExpenseMonitor.Domain.Entities;
 public class Restaurant
 {
     public int Id { get; set; }

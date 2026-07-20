@@ -1,15 +1,15 @@
-﻿using FluentValidation;
+using FluentValidation;
 using FluentValidation.TestHelper;
-using Restaurants.Application.Restaurants.Command.CreateRestaurant;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Application.Restaurants.Validator;
+using ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Application.Restaurants.Validator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Applications.Tets.Restaurants.Commands.CreateRastaurant
+namespace ExpenseMonitor.Applications.Tets.Restaurants.Commands.CreateRastaurant
 {
     public class CreateRestaurantCommandValidatorTests
     {

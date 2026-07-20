@@ -1,11 +1,11 @@
-﻿using MediatR;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Commands.UploadRestaurantLogo
+namespace ExpenseMonitor.Application.Restaurants.Commands.UploadRestaurantLogo
 {
     public class UploadRestaurantLogoCommand : IRequest
     {

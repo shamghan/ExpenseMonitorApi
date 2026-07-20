@@ -1,16 +1,16 @@
-﻿using AutoMapper;
+using AutoMapper;
 using FluentAssertions;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Restaurants.Application.Restaurants.Commands.UpdateRestuarant;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Exceptions;
-using Restaurants.Domain.Interfaces;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Application.Restaurants.Commands.UpdateRestuarant;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Exceptions;
+using ExpenseMonitor.Domain.Interfaces;
+using ExpenseMonitor.Domain.Repositories;
 using System.Security.AccessControl;
 
-namespace Restaurants.Applications.Tests.Restaurants.Commands.UpdateRestaurant
+namespace ExpenseMonitor.Applications.Tests.Restaurants.Commands.UpdateRestaurant
 {
 
 

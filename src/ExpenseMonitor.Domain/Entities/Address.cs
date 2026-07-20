@@ -1,4 +1,4 @@
-﻿namespace Restaurants.Domain.Entities;
+namespace ExpenseMonitor.Domain.Entities;
 public class Address
 {
     public string? City { get; set; }

@@ -1,6 +1,6 @@
-﻿using Restaurants.Domain.Exceptions;
+using ExpenseMonitor.Domain.Exceptions;
 
-namespace Restaurants.API.Middleware
+namespace ExpenseMonitor.API.Middleware
 {
     public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) : IMiddleware
     {

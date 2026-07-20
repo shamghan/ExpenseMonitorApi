@@ -1,4 +1,4 @@
-﻿namespace Restaurants.Infrastructure.Seeders
+namespace ExpenseMonitor.Infrastructure.Seeders
 {
     public interface IRestaurantsSeeder
     {

@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Restaurants.Domain.Entities;
+using ExpenseMonitor.Domain.Entities;
 
-namespace Restaurants.Infrastructure.Persistence;
+namespace ExpenseMonitor.Infrastructure.Persistence;
 
 
 

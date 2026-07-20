@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Domain.Exceptions
+namespace ExpenseMonitor.Domain.Exceptions
 {
     public class ForbidException :Exception 
     {

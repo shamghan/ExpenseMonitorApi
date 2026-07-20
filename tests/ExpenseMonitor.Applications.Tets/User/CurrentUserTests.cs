@@ -1,8 +1,8 @@
 
-using Restaurants.Domain.Constants;
-using Restaurants.Application.User;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Application.User;
 using FluentAssertions;
-namespace Restaurants.Applications.Tets.User
+namespace ExpenseMonitor.Applications.Tets.User
 {
     public class CurrrentUserTests
     {

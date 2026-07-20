@@ -1,16 +1,16 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Restaurants.Application.Dishes.Commands.CreateDishes;
-using Restaurants.Application.Dishes.Commands.DeleteDishes;
-using Restaurants.Application.Dishes.Dtos;
-using Restaurants.Application.Dishes.Queries.GetByIdForRestaurant;
-using Restaurants.Application.Dishes.Queries.GetDishesForRestaurant;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Infrastructure.Authorization;
+using ExpenseMonitor.Application.Dishes.Commands.CreateDishes;
+using ExpenseMonitor.Application.Dishes.Commands.DeleteDishes;
+using ExpenseMonitor.Application.Dishes.Dtos;
+using ExpenseMonitor.Application.Dishes.Queries.GetByIdForRestaurant;
+using ExpenseMonitor.Application.Dishes.Queries.GetDishesForRestaurant;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Infrastructure.Authorization;
 
-namespace Restaurants.API.Controllers
+namespace ExpenseMonitor.API.Controllers
 {
     [Route("api/restaurants/{restaurantId}/dishes")]
     [ApiController]

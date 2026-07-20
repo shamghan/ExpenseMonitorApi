@@ -1,15 +1,15 @@
-﻿using Microsoft.Extensions.Logging;
-using Restaurants.Application.User;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Interfaces;
+using Microsoft.Extensions.Logging;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Authorization.Services
+namespace ExpenseMonitor.Infrastructure.Authorization.Services
 {
     public class RestaurantAuthorizationService(ILogger<RestaurantAuthorizationService> logger,
         IUserContext userContext) : IRestaurantAuthorizationService

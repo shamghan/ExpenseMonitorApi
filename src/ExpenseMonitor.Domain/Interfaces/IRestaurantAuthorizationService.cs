@@ -1,7 +1,7 @@
-﻿using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
 
-namespace Restaurants.Domain.Interfaces;
+namespace ExpenseMonitor.Domain.Interfaces;
 
 public interface IRestaurantAuthorizationService
 {

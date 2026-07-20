@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Authorization.Requirments
+namespace ExpenseMonitor.Infrastructure.Authorization.Requirments
 {
     public class MinimumAgeRequirment(int minimumAge) : IAuthorizationRequirement
     {

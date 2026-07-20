@@ -1,16 +1,16 @@
-﻿using AutoMapper;
+using AutoMapper;
 using FluentAssertions;
-using Restaurants.Application.Restaurants.Command.CreateRestaurant;
-using Restaurants.Application.Restaurants.Commands.UpdateRestuarant;
-using Restaurants.Application.Restaurants.Dtos;
-using Restaurants.Domain.Entities;
+using ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant;
+using ExpenseMonitor.Application.Restaurants.Commands.UpdateRestuarant;
+using ExpenseMonitor.Application.Restaurants.Dtos;
+using ExpenseMonitor.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Applications.Tests.Restaurants.Dto
+namespace ExpenseMonitor.Applications.Tests.Restaurants.Dto
 {
     public class RestaurantsProfileTests
     {

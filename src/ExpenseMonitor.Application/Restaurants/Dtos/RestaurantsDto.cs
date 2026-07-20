@@ -1,12 +1,12 @@
-﻿using Restaurants.Application.Dishes.Dtos;
-using Restaurants.Domain.Entities;
+using ExpenseMonitor.Application.Dishes.Dtos;
+using ExpenseMonitor.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Dtos
+namespace ExpenseMonitor.Application.Restaurants.Dtos
 {
     public class RestaurantsDto
     {

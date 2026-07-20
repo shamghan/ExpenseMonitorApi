@@ -1,16 +1,16 @@
-﻿using Azure.Storage;
+using Azure.Storage;
 using Azure.Storage.Blobs;
 using Azure.Storage.Sas;
 using Microsoft.Extensions.Options;
-using Restaurants.Domain.Interfaces;
-using Restaurants.Infrastructure.Configuration;
+using ExpenseMonitor.Domain.Interfaces;
+using ExpenseMonitor.Infrastructure.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Storage
+namespace ExpenseMonitor.Infrastructure.Storage
 {
     public class BlobStorageService(IOptions<BlobStorageSettings> blobStorageSettingsOption) : IBlobStorageService
     {

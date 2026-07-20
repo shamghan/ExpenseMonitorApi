@@ -1,17 +1,17 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.Extensions.Logging;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Exceptions;
-using Restaurants.Domain.Interfaces;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Exceptions;
+using ExpenseMonitor.Domain.Interfaces;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Commands.UploadRestaurantLogo
+namespace ExpenseMonitor.Application.Restaurants.Commands.UploadRestaurantLogo
 {
     public class UploadRestaurantLogoCommandHandler(ILogger<UploadRestaurantLogoCommandHandler> logger,
         IRestaurantsRepository restaurantsRepository,

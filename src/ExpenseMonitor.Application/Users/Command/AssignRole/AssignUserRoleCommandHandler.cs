@@ -1,14 +1,14 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using Restaurants.Domain.Exceptions;
+using ExpenseMonitor.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Users.Command.AssignRole
+namespace ExpenseMonitor.Application.Users.Command.AssignRole
 {
     public class AssignUserRoleCommandHandler(ILogger<AssignUserRoleCommandHandler> logger,
         UserManager<Domain.Entities.User> userManager,

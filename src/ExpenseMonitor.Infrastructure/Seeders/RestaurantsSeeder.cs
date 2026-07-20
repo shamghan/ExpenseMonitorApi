@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Infrastructure.Persistence;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Seeders
+namespace ExpenseMonitor.Infrastructure.Seeders
 {
     public class RestaurantsSeeder(RestaurantsDbContext dbContext, UserManager<User> userManager) : IRestaurantsSeeder
     {

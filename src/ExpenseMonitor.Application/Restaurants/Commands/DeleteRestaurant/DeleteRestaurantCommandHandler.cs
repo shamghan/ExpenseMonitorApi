@@ -1,19 +1,19 @@
-﻿using AutoMapper;
+using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Restaurants.Application.Restaurants.Command.CreateRestaurant;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Exceptions;
-using Restaurants.Domain.Interfaces;
-using Restaurants.Domain.Repositories;
+using ExpenseMonitor.Application.Restaurants.Command.CreateRestaurant;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Exceptions;
+using ExpenseMonitor.Domain.Interfaces;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Commands.DeleteRestaurant
+namespace ExpenseMonitor.Application.Restaurants.Commands.DeleteRestaurant
 {
     public class DeleteRestaurantCommandHandler(ILogger<CreateRestaurantCommandHandler> logger,
         IMapper mapper, IRestaurantsRepository restaurantsRepository,

@@ -1,13 +1,13 @@
 using FluentAssertions;
 using Microsoft.AspNetCore.Authorization;
 using Moq;
-using Restaurants.Application.User;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
-using Restaurants.Infrastructure.Authorization.Requirments;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
+using ExpenseMonitor.Infrastructure.Authorization.Requirments;
 using Xunit;
 
-namespace Restaurants.Infrastructure.Tests.Authorization.Requirments;
+namespace ExpenseMonitor.Infrastructure.Tests.Authorization.Requirments;
 
 public class CreatedMultipleRestaurantsRequirmentHandlerTests
 {

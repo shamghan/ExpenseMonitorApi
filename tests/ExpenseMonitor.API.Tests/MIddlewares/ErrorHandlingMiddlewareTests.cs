@@ -1,17 +1,17 @@
-﻿using FluentAssertions;
+using FluentAssertions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Restaurants.API.Middleware;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Exceptions;
+using ExpenseMonitor.API.Middleware;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.API.Tests.MIddlewares
+namespace ExpenseMonitor.API.Tests.MIddlewares
 {
     public class ErrorHandlingMiddlewareTests
     {

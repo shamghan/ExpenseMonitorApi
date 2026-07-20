@@ -1,4 +1,4 @@
-﻿namespace Restaurants.API.Tests.Controllers
+namespace ExpenseMonitor.API.Tests.Controllers
 {
     public class WebApplicationFactory
     {

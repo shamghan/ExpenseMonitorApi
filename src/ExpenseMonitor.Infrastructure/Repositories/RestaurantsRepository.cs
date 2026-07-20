@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Restaurants.Domain.Constants;
-using Restaurants.Domain.Entities;
-using Restaurants.Domain.Repositories;
-using Restaurants.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using ExpenseMonitor.Domain.Constants;
+using ExpenseMonitor.Domain.Entities;
+using ExpenseMonitor.Domain.Repositories;
+using ExpenseMonitor.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Repositories
+namespace ExpenseMonitor.Infrastructure.Repositories
 {
     public class RestaurantsRepository(RestaurantsDbContext dbContext) : IRestaurantsRepository
     {

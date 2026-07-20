@@ -1,8 +1,8 @@
-﻿using MediatR;
-using Restaurants.Application.Dishes.Dtos;
+using MediatR;
+using ExpenseMonitor.Application.Dishes.Dtos;
 
 
-namespace Restaurants.Application.Dishes.Queries.GetDishesForRestaurant;
+namespace ExpenseMonitor.Application.Dishes.Queries.GetDishesForRestaurant;
 public class GetDishesForRestaurantQuery(int restaurantId) : IRequest<IEnumerable<DishDto>>
 {
     public int restaurantId { get; set; } = restaurantId;

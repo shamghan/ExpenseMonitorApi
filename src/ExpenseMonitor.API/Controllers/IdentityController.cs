@@ -1,12 +1,12 @@
-﻿using MediatR;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Restaurants.Application.User.Command;
-using Restaurants.Application.Users.Command.AssignRole;
-using Restaurants.Application.Users.Command.RemoveRole;
-using Restaurants.Domain.Constants;
+using ExpenseMonitor.Application.User.Command;
+using ExpenseMonitor.Application.Users.Command.AssignRole;
+using ExpenseMonitor.Application.Users.Command.RemoveRole;
+using ExpenseMonitor.Domain.Constants;
 
-namespace Restaurants.API.Controllers
+namespace ExpenseMonitor.API.Controllers
 {
     [ApiController]
     [Route("api/identity")]

@@ -1,12 +1,12 @@
-﻿using FluentValidation;
-using Restaurants.Application.Restaurants.Dtos;
+using FluentValidation;
+using ExpenseMonitor.Application.Restaurants.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Application.Restaurants.Validator;
+namespace ExpenseMonitor.Application.Restaurants.Validator;
 
 public class CreateRestaurantDtoValidator : AbstractValidator<CreateRestaurantDto>
 {

@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Restaurants.Application.User;
-using Restaurants.Domain.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using ExpenseMonitor.Application.User;
+using ExpenseMonitor.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurants.Infrastructure.Authorization.Requirments
+namespace ExpenseMonitor.Infrastructure.Authorization.Requirments
 {
     public class CreatedMultipleRestaurantsRequirmentHandler(IRestaurantsRepository restaurantsRepository,
         IUserContext userContext) : AuthorizationHandler<CreatedMultipleRestaurantsRequirment>
