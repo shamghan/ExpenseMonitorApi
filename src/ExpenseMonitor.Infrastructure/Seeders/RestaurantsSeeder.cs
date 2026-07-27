@@ -29,6 +29,13 @@ namespace ExpenseMonitor.Infrastructure.Seeders
                     await dbContext.SaveChangesAsync();
                 }
 
+                if (!dbContext.Categories.Any())
+                {
+                    var categories = GetCategories();
+                    dbContext.Categories.AddRange(categories);
+                    await dbContext.SaveChangesAsync();
+                }
+
                 if (!dbContext.Restaurants.Any())
                 {
                     var owner = await userManager.FindByEmailAsync("owner@gmail.com");
@@ -67,6 +74,62 @@ namespace ExpenseMonitor.Infrastructure.Seeders
                 ];
             return roless;
         }
+        private IEnumerable<Category> GetCategories()
+        {
+            List<Category> categories =
+            [
+                new()
+                {
+                    Name = "Food & Dining",
+                    Description = "Restaurants, cafes, and food delivery",
+                    ColorName = "Orange",
+                    ColorCode = "#FF9800",
+                    Icon = "restaurant"
+                },
+                new()
+                {
+                    Name = "Transportation",
+                    Description = "Fuel, public transit, ride sharing",
+                    ColorName = "Blue",
+                    ColorCode = "#2196F3",
+                    Icon = "directions_car"
+                },
+                new()
+                {
+                    Name = "Entertainment",
+                    Description = "Movies, games, concerts, hobbies",
+                    ColorName = "Purple",
+                    ColorCode = "#9C27B0",
+                    Icon = "movie"
+                },
+                new()
+                {
+                    Name = "Shopping",
+                    Description = "Clothing, electronics, groceries",
+                    ColorName = "Green",
+                    ColorCode = "#4CAF50",
+                    Icon = "shopping_cart"
+                },
+                new()
+                {
+                    Name = "Bills & Utilities",
+                    Description = "Electricity, water, internet, rent",
+                    ColorName = "Red",
+                    ColorCode = "#F44336",
+                    Icon = "receipt"
+                },
+                new()
+                {
+                    Name = "Healthcare",
+                    Description = "Doctor, pharmacy, insurance",
+                    ColorName = "Teal",
+                    ColorCode = "#009688",
+                    Icon = "local_hospital"
+                }
+            ];
+            return categories;
+        }
+
         private IEnumerable<Restaurant> GetRestaurants(string ownerId)
         {
             List<Restaurant> restaurants = [
