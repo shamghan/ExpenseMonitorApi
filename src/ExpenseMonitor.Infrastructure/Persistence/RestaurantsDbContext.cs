@@ -14,6 +14,7 @@ public DbSet<Restaurant> Restaurants { get; set; }
     public DbSet<Dish> Dishes { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<MonthlyBudget> MonthlyBudgets { get; set; }
+    public DbSet<Transaction> Transactions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -41,6 +42,16 @@ public DbSet<Restaurant> Restaurants { get; set; }
         modelBuilder.Entity<MonthlyBudget>()
             .HasIndex(mb => new { mb.UserId, mb.CategoryId })
             .IsUnique();
+
+        modelBuilder.Entity<Transaction>()
+            .HasOne(t => t.Category)
+            .WithMany()
+            .HasForeignKey(t => t.CategoryId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Transaction>()
+            .Property(t => t.PaymentType)
+            .HasConversion<string>();
     }
 }
 

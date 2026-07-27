@@ -33,6 +33,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IDishesRepository, DishesRepository>();
         services.AddScoped<ICategoriesRepository, CategoriesRepository>();
         services.AddScoped<IMonthlyBudgetsRepository, MonthlyBudgetsRepository>();
+        services.AddScoped<ITransactionsRepository, TransactionsRepository>();
         services.AddAuthorizationBuilder()
             //.AddPolicy("HasNationality", builder => builder.RequireClaim("Nationality")); //It checks the Nationality column, and if it has a value, the user is authorized to access the endpoint; if the Nationality column is empty, access to the endpoint is denied.
             .AddPolicy(PolicyName.HasNationality, builder => builder.RequireClaim(AppClaimTypes.Nationality, "Indian", "German"))

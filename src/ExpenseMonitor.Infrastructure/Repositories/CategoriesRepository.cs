@@ -20,15 +20,17 @@ namespace ExpenseMonitor.Infrastructure.Repositories
             await dbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Category>> GetAllAsync()
+        public async Task<IEnumerable<Category>> GetAllAsync(Guid userId)
         {
             var categories = await dbContext.Categories
+                .Where(c => c.UserId == null || c.UserId == userId)
                 .Select(c => new Category
                 {
                     Id = c.Id,
                     Name = c.Name,
                     Description = c.Description,
-                    Icon = c.Icon
+                    Icon = c.Icon,
+                    UserId = c.UserId
                 })
                 .ToListAsync();
             return categories;

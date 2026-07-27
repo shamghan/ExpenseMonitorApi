@@ -1,5 +1,4 @@
 using AutoMapper;
-using ExpenseMonitor.Application.MonthlyBudgets.Commands.UpdateMonthlyBudget;
 using ExpenseMonitor.Domain.Entities;
 
 namespace ExpenseMonitor.Application.MonthlyBudgets.Dtos
@@ -8,7 +7,7 @@ namespace ExpenseMonitor.Application.MonthlyBudgets.Dtos
     {
         public MonthlyBudgetsProfile()
         {
-            CreateMap<UpdateMonthlyBudgetCommand, MonthlyBudget>();
+            CreateMap<UpdateMonthlyBudgetDto, MonthlyBudget>();
             CreateMap<CreateMonthlyBudgetDto, MonthlyBudget>()
                 .ForMember(dest => dest.UserId, opt => opt.Ignore())
                 .ForMember(dest => dest.CreatedOn, opt => opt.MapFrom(_ => DateTime.UtcNow))

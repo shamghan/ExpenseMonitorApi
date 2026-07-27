@@ -1,3 +1,5 @@
+using System;
+
 namespace ExpenseMonitor.Domain.Entities;
 public class Category
 {
@@ -7,4 +9,5 @@ public class Category
     public string ColorName { get; set; } = default!;
     public string ColorCode { get; set; } = default!;
     public string Icon { get; set; } = default!;
+    public Guid? UserId { get; set; }
 }

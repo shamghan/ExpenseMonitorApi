@@ -42,7 +42,7 @@ namespace ExpenseMonitor.Infrastructure.Repositories
         public async Task<IEnumerable<Category>> GetUnassignedCategoriesByUserId(Guid userId)
         {
             var categories = await dbContext.Categories
-                .Where(c => !dbContext.MonthlyBudgets
+                .Where(c => (c.UserId == null || c.UserId == userId) && !dbContext.MonthlyBudgets
                     .Any(mb => mb.CategoryId == c.Id && mb.UserId == userId))
                 .Select(c => new Category
                 {
@@ -52,6 +52,7 @@ namespace ExpenseMonitor.Infrastructure.Repositories
                     Icon = c.Icon,
                     ColorCode= c.ColorCode,
                     ColorName = c.ColorName,
+                    UserId = c.UserId
                 })
                 .ToListAsync();
             return categories;

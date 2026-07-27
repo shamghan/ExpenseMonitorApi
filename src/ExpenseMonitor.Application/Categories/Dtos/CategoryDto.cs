@@ -1,3 +1,5 @@
+using System;
+
 namespace ExpenseMonitor.Application.Categories.Dtos
 {
     public class CategoryDto
@@ -8,5 +10,6 @@ namespace ExpenseMonitor.Application.Categories.Dtos
         public string ColorName { get; set; } = default!;
         public string ColorCode { get; set; } = default!;
         public string Icon { get; set; } = default!;
+        public Guid? UserId { get; set; }
     }
 }

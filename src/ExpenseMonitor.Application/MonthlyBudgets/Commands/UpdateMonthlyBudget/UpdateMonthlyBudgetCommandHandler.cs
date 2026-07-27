@@ -17,7 +17,8 @@ namespace ExpenseMonitor.Application.MonthlyBudgets.Commands.UpdateMonthlyBudget
             var userIdString = userContext.GetCurrentUser()?.Id ?? throw new InvalidOperationException("User not authenticated");
             var userId = Guid.Parse(userIdString);
             var monthlyBudget = await monthlyBudgetsRepository.GetById(request.Id, userId) ?? throw new NotFoundException(nameof(MonthlyBudget), request.Id.ToString());
-            mapper.Map(request.MonthlyBudgetDto, monthlyBudget);
+            monthlyBudget.MonthLimit = request.MonthlyBudgetDto.MonthLimit;
+
             monthlyBudget.UpdatedOn = DateTime.UtcNow;
             await monthlyBudgetsRepository.SaveChanges();
         }

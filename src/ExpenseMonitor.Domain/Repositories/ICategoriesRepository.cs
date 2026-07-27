@@ -6,7 +6,7 @@ namespace ExpenseMonitor.Domain.Repositories
     {
         Task<int> Create(Category entity);
         Task Delete(Category entity);
-        Task<IEnumerable<Category>> GetAllAsync();
+        Task<IEnumerable<Category>> GetAllAsync(Guid userId);
         Task<Category?> GetById(int id);
         Task SaveChanges();
     }

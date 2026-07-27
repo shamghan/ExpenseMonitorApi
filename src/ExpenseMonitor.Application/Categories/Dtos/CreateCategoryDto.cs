@@ -1,3 +1,5 @@
+using System;
+
 namespace ExpenseMonitor.Application.Categories.Dtos
 {
     public class CreateCategoryDto
